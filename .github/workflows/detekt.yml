@@ -1,9 +1,6 @@
 name: Static code analysis
 
-on:
-  push:
-  pull_request:
-    branches: [ "main" ]
+on: [pull_request]
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -28,13 +25,13 @@ jobs:
       - name: Make gradlew executable
         run: chmod +x ./gradlew
 
-      - name: detekt
-        run: ./gradlew detekt
-
       - name: Setup reviewdog
         uses: reviewdog/action-setup@v1
         with:
           reviewdog_version: latest
+
+      - name: detekt
+        run: ./gradlew detekt
 
       - name: reviewdog report
         if: failure()
