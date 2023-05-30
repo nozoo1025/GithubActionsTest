@@ -23,6 +23,11 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colorScheme.background
                 ) {
                     val name = ""
+                    val greeting = if (name.isNotBlank()) {
+                        "Hello $name!"
+                    } else {
+                        "Hello World!"
+                    }
                     Greeting("プルリク")
                 }
             }
