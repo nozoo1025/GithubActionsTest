@@ -23,6 +23,7 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colorScheme.background
                 ) {
                     val message = "Hello"
+                    val message2 = ""
                     Greeting("プルリク")
                 }
             }
