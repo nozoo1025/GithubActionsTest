@@ -34,7 +34,12 @@ jobs:
       - name: Setup reviewdog
         uses: reviewdog/action-setup@v1
         with:
-          reviewdog_version: 0.14.0
+          reviewdog_version: 0.14.1
+
+      - name: Install reviewdog
+        run: |
+          wget -O - -q https://raw.githubusercontent.com/reviewdog/reviewdog/master/install.sh| sh -s -- -b /usr/local/bin/ v0.14.1
+
 
       - name: reviewdog report
         if: failure()
