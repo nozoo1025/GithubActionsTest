@@ -34,7 +34,7 @@ jobs:
       - name: Setup reviewdog
         uses: reviewdog/action-setup@v1
         with:
-          reviewdog_version: 0.14.1
+          reviewdog_version: 0.14.0
 
       - name: reviewdog report
         if: failure()
