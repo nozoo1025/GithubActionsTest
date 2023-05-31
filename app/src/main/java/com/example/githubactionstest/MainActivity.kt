@@ -23,6 +23,12 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colorScheme.background
                 ) {
                     val name = "Android"
+                    if (true) {
+                        Greeting(name)
+                    } else {
+                        return@Surface
+                        Greeting("Android")
+                    }
                     Greeting("プルリク")
                 }
             }
