@@ -22,13 +22,12 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    val name = "Android"
-                    if (true) {
-                        Greeting(name)
-                    } else {
-                        return@Surface
-                        Greeting("Android")
+                    var name: String? = null
+                    if (name == null) {
+                        name = "Android"
                     }
+                    if (true) 1 else 2
+                    val number = 0x0000001
                     Greeting("プルリク")
                 }
             }
