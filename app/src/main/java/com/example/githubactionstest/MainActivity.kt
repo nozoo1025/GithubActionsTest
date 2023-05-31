@@ -22,12 +22,6 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    val name = ""
-                    val greeting = if (name.isNotBlank()) {
-                        "Hello $name!"
-                    } else {
-                        "Hello World!"
-                    }
                     Greeting("プルリク")
                 }
             }
