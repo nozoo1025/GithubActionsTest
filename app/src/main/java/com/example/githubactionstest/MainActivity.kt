@@ -34,6 +34,7 @@ class MainActivity : ComponentActivity() {
                     }
                     if (true) 1 else 2
                     val number2 = 0x0000001
+                    if (true) 1 else 2
                     Greeting("プルリク")
                 }
             }
