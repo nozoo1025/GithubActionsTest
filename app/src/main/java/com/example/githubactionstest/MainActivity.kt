@@ -22,6 +22,19 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
+                    var name: String? = null
+                    if (name == null) {
+                        name = "Android"
+                    }
+                    if (true) 1 else 2
+                    val number = 0x0000001
+                    var name2: String? = null
+                    if (name == null) {
+                        name = "Android"
+                    }
+                    if (true) 1 else 2
+                    val number2 = 0x0000001
+                    if (true) 1 else 2
                     Greeting("プルリク")
                 }
             }
